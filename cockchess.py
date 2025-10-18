@@ -26,7 +26,7 @@ class TranspositionEntry:
         self.best_move = best_move
 
 class CockChessUltra:
-    """Ultra-strong chess engine targeting 2500-3000 ELO"""
+    """Ultra-strong chess engine targeting 4000 ELO"""
     
     def __init__(self, max_depth: int = 12):
         self.max_depth = max_depth
@@ -965,7 +965,7 @@ class ChessGUI:
         y += 30
         
         if self.engine_thinking:
-            status = self.font_small.render("🧠 Engine thinking...", True, (255, 255, 0))
+            status = self.font_small.render("Engine thinking...", True, (255, 255, 0))
             self.screen.blit(status, (panel_x + 15, y))
             
             dots = "." * ((pygame.time.get_ticks() // 500) % 4)
@@ -1290,35 +1290,36 @@ class ChessGUI:
 
 if __name__ == "__main__":
     print("="*70)
-    print("   🐓⚡ COCKCHESS ULTRA V2 - NEXT GENERATION ENGINE ⚡🐓")
+    print(" COCKCHESS ULTRA V2 - NEXT GENERATION ENGINE")
     print("="*70)
-    print("\n📊 Target Rating: 4000 ELO)
-    print("\n🆕 New Features:")
-    print("   ✓ Undo button (takes back your move and engine's move)")
-    print("   ✓ Extended time controls: 1s, 3s, 5s, 10s, 20s, 30s, 60s")
-    print("   ✓ Board doesn't change while engine is thinking")
-    print("\n🔥 Advanced Features:")
-    print("   ✓ Principal Variation Search (PVS)")
-    print("   ✓ Null Move Pruning")
-    print("   ✓ Late Move Reductions (LMR)")
-    print("   ✓ Aspiration Windows")
-    print("   ✓ Advanced Evaluation")
-    print("   ✓ Opening Book")
-    print("\n📦 Initializing...")
+    print("\n Target Rating: 4000 ELO)
+    print(" \nNew Features:")
+    print("    Undo button (takes back your move and engine's move)")
+    print("    Extended time controls: 1s, 3s, 5s, 10s, 20s, 30s, 60s")
+    print("    Board doesn't change while engine is thinking")
+    print("\n Advanced Features:")
+    print("    Principal Variation Search (PVS)")
+    print("    Null Move Pruning")
+    print("    Late Move Reductions (LMR)")
+    print("    Aspiration Windows")
+    print("    Advanced Evaluation")
+    print("    Opening Book")
+    print("\n Initializing...")
     
     try:
         gui = ChessGUI()
-        print("✅ GUI loaded successfully!")
-        print("\n🎮 Controls:")
+        print(" GUI loaded successfully!")
+        print("\n Controls:")
         print("   • Click pieces to move")
         print("   • Click time buttons to adjust engine think time")
         print("   • Click Undo to take back your last move")
         print("   • New Game / Flip Board buttons")
-        print("\n🚀 Starting game...\n")
+        print("\n Starting game...\n")
         
         gui.run()
     except Exception as e:
-        print(f"\n❌ Error: {e}")
+        print(f"\nError: {e}")
         import traceback
         traceback.print_exc()
+
 
