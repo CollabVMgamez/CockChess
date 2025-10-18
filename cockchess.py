@@ -1292,7 +1292,7 @@ if __name__ == "__main__":
     print("="*70)
     print(" COCKCHESS ULTRA V2 - NEXT GENERATION ENGINE")
     print("="*70)
-    print("\n Target Rating: 4000 ELO)
+    print("\n Target Rating: 4000 ELO")
     print(" \nNew Features:")
     print("    Undo button (takes back your move and engine's move)")
     print("    Extended time controls: 1s, 3s, 5s, 10s, 20s, 30s, 60s")
@@ -1321,5 +1321,6 @@ if __name__ == "__main__":
         print(f"\nError: {e}")
         import traceback
         traceback.print_exc()
+
 
 
