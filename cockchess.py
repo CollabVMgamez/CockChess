@@ -1,4 +1,4 @@
-# cockchess_ultra_v2.py
+# cockchess.py
 import chess
 import chess.polyglot
 import pygame
@@ -1292,7 +1292,7 @@ if __name__ == "__main__":
     print("="*70)
     print("   🐓⚡ COCKCHESS ULTRA V2 - NEXT GENERATION ENGINE ⚡🐓")
     print("="*70)
-    print("\n📊 Target Rating: 2500-3000 ELO")
+    print("\n📊 Target Rating: 4000 ELO)
     print("\n🆕 New Features:")
     print("   ✓ Undo button (takes back your move and engine's move)")
     print("   ✓ Extended time controls: 1s, 3s, 5s, 10s, 20s, 30s, 60s")
@@ -1321,3 +1321,4 @@ if __name__ == "__main__":
         print(f"\n❌ Error: {e}")
         import traceback
         traceback.print_exc()
+
